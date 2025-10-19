@@ -13,5 +13,4 @@ import { EncabezadoComponent } from './components/encabezado/encabezado';
   styleUrls: ['./app.css']
 })
 export class App {
-  // El router maneja todo automáticamente
 }

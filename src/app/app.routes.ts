@@ -6,7 +6,7 @@ import { HomeComponent } from './components/home/home';
 import { UsuariosComponent } from './components/usuarios/usuarios';
 import { ComunicacionComponent } from './components/comunicacion/comunicacion';
 import { AcercaComponent } from './components/acerca/acerca';
-import { UsuariosExternosComponent } from './components/usuarios-externos/usuarios-externos';  // ← AGREGAR
+import { UsuariosExternosComponent } from './components/usuarios-externos/usuarios-externos';
 
 // Definimos las rutas de la aplicación
 export const routes: Routes = [
