@@ -1,1 +1,28 @@
-<p>comunicacion works!</p>
+<!-- src/app/components/comunicacion/comunicacion.html -->
+<div class="comunicacion-container">
+  <h1 class="titulo-pagina">Comunicación entre Componentes</h1>
+
+  <div class="explicacion">
+    <h2>¿Qué verás aquí?</h2>
+    <p>
+      Este ejemplo demuestra cómo un componente <strong>PADRE</strong> puede
+      enviar datos a un componente <strong>HIJO</strong> usando el decorador
+      <code>@Input()</code> de Angular.
+    </p>
+    <p>
+      El flujo de datos es: <strong>Padre → Hijo</strong> (unidireccional)
+    </p>
+  </div>
+
+  <!-- Aquí se muestra el componente padre (que contiene al hijo) -->
+  <app-compo-padre></app-compo-padre>
+
+  <div class="notas">
+    <h3>📝 Conceptos Clave</h3>
+    <ul>
+      <li><strong>@Input():</strong> Permite recibir datos desde el componente padre</li>
+      <li><strong>[propiedad]="valor":</strong> Sintaxis de property binding en Angular</li>
+      <li><strong>Data Flow:</strong> Los datos fluyen de arriba hacia abajo en el árbol de componentes</li>
+    </ul>
+  </div>
+</div>

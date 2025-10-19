@@ -1,12 +1,17 @@
-import { Component, signal } from '@angular/core';
+// Importamos Angular y RouterOutlet para mostrar las páginas
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+// Importamos encabezado
+import { EncabezadoComponent } from './components/encabezado/encabezado';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  // Importamos el encabezado y RouterOutlet (necesario para que funcione la navegación)
+  imports: [EncabezadoComponent, RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
-  protected readonly title = signal('frontEnd');
+  // El router maneja todo automáticamente
 }

@@ -1,0 +1,88 @@
+/* src/app/components/comunicacion/comunicacion.css */
+.comunicacion-container {
+  min-height: calc(100vh - 64px);
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+  padding: 30px 20px;
+}
+
+.titulo-pagina {
+  text-align: center;
+  color: #2d3436;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.explicacion {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 0 auto 30px;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.explicacion h2 {
+  color: #e17055;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.explicacion p {
+  color: #636e72;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.explicacion code {
+  background: #dfe6e9;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #e17055;
+  font-family: 'Courier New', monospace;
+}
+
+.notas {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 30px auto 0;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.notas h3 {
+  color: #0984e3;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.notas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notas li {
+  background: #dfe6e9;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border-left: 4px solid #0984e3;
+  color: #2d3436;
+}
+
+.notas strong {
+  color: #0984e3;
+}
+
+@media (max-width: 768px) {
+  .titulo-pagina {
+    font-size: 2rem;
+  }
+
+  .explicacion,
+  .notas {
+    padding: 15px;
+  }
+}
