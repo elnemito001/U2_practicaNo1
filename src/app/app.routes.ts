@@ -1,11 +1,12 @@
 // src/app/app.routes.ts
 import { Routes } from '@angular/router';
 
-// Importamos los componentes (todos desde components/)
+// Importamos todos los componentes
 import { HomeComponent } from './components/home/home';
 import { UsuariosComponent } from './components/usuarios/usuarios';
 import { ComunicacionComponent } from './components/comunicacion/comunicacion';
 import { AcercaComponent } from './components/acerca/acerca';
+import { UsuariosExternosComponent } from './components/usuarios-externos/usuarios-externos';  // ← AGREGAR
 
 // Definimos las rutas de la aplicación
 export const routes: Routes = [
@@ -23,6 +24,9 @@ export const routes: Routes = [
 
   // Información del proyecto
   { path: 'acerca', component: AcercaComponent },
+
+  // ← AGREGAR ESTA RUTA NUEVA
+  { path: 'usuarios-externos', component: UsuariosExternosComponent },
 
   // Cualquier ruta no encontrada redirige a home
   { path: '**', redirectTo: '/home' }

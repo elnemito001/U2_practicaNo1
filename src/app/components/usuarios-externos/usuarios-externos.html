@@ -1,0 +1,47 @@
+<!-- src/app/components/usuarios-externos/usuarios-externos.html -->
+
+<div class="container">
+  <h1>Usuarios desde JSONPlaceholder (API Externa)</h1>
+
+  <!-- Cargando -->
+  <div *ngIf="cargando">
+    <p>Cargando usuarios...</p>
+  </div>
+
+  <!-- Error -->
+  <div *ngIf="error && !cargando">
+    <p style="color: red;">{{ error }}</p>
+    <button (click)="cargarUsuarios()">Reintentar</button>
+  </div>
+
+  <!-- Tabla de usuarios -->
+  <div *ngIf="!cargando && usuarios.length > 0">
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Usuario</th>
+          <th>Email</th>
+          <th>Teléfono</th>
+          <th>Ciudad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{ usuario.id }}</td>
+          <td>{{ usuario.name }}</td>
+          <td>{{ usuario.username }}</td>
+          <td>{{ usuario.email }}</td>
+          <td>{{ usuario.phone }}</td>
+          <td>{{ usuario.address?.city }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Sin datos -->
+  <div *ngIf="!cargando && usuarios.length === 0 && !error">
+    <p>No hay usuarios para mostrar</p>
+  </div>
+</div>

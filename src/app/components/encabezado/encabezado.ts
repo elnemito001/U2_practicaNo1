@@ -14,6 +14,7 @@ export class EncabezadoComponent {
   menu = [
     { label: 'Home', path: '/home' },
     { label: 'Usuarios', path: '/usuarios' },
+    { label: 'API Externa', path: '/usuarios-externos' },  // ← AGREGAR ESTA LÍNEA
     { label: 'Comunicación', path: '/comunicacion' },
     { label: 'Acerca de', path: '/acerca' }
   ];
